@@ -1,0 +1,6 @@
+show dbs
+use BookstoreDb
+db.Books.insertMany([{Name:"Design Patterns",price:500, Category:"Computer",Author:"Ralph johnson"},{{Name:"Design Patterns",price:500, Category:"Computer",Author:"Ralph johnson"}])
+db.find().pretty()
+db.Books.deleteOne({_id:""})
+db.Books.updateMany({_id:""}{$set{Name:"Madhu}})
